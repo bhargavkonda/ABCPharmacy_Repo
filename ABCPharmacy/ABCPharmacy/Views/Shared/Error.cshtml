@@ -1,0 +1,21 @@
+﻿
+@model ABCPharmacy.Models.ErrorModel
+@{
+    ViewBag.Title = "ABC Pharmacy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Error</title>
+</head>
+<body>
+    <br/><br/>
+    <div class="row div-margin">
+        <div class="col-md-3">
+            @Html.DisplayFor(model => model.ErrorMessage)
+        </div>
+    </div>
+</body>
+</html>
